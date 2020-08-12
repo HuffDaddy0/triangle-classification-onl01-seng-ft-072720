@@ -24,8 +24,8 @@ def kind
     :scalene
   end
 else
-  begin
     raise TriangleError
+    begin
   rescue TriangleError
     triangle
   end
