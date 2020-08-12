@@ -25,9 +25,9 @@ def kind
   end
 else
   begin
-    raise Triangle::TriangleError
-  rescue TriangleError => error
-    error.triangle
+    raise TriangleError
+  rescue TriangleError
+    triangle
   end
 end
 end
